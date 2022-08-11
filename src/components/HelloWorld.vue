@@ -1,36 +1,55 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
+import { t, setupIntl } from "../lib/intl";
+import enTranslations from "../translations/en_US.json";
+import deTranslations from "../translations/de_DE.json";
 
 defineProps({
-  msg: String
-})
+  msg: String,
+});
 
-const count = ref(0)
+const count = ref(0);
+
+const changeLocale = (locale, messages) => {
+  setupIntl({
+    locale,
+    messages,
+  });
+};
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" @click="count++">
+      {{ t("hello_count", { count }) }}
+    </button>
     <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
+      {{ t("hello_edit", { code: "components/HelloWorld.vue" }) }}
     </p>
   </div>
 
+  <button type="button" @click="changeLocale('en-US', enTranslations)">
+    EN
+  </button>
+  <button type="button" @click="changeLocale('de-DE', deTranslations)">
+    DE
+  </button>
   <p>
-    Check out
+    {{ t("hello_checkout") }}
+
     <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
       >create-vue</a
-    >, the official Vue + Vite starter
+    >
+    {{ t("hello_official") }}
   </p>
   <p>
-    Install
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    in your IDE for a better DX
+    {{ t("hello_install") }}
+    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a
+    >{{ t("hello_ide") }}
   </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <p class="read-the-docs">{{ t("hello_click") }}</p>
 </template>
 
 <style scoped>

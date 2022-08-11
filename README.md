@@ -1,7 +1,27 @@
-# Vue 3 + Vite
+## Vue 3 React
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vanilla Vue 3 app with internalization using [Yata](https://www.yatapp.net/).
 
-## Recommended IDE Setup
+<img src="https://user-images.githubusercontent.com/1100879/184042104-be876508-e82b-433d-a1ff-6b3159d046ac.gif" width="600" />
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## Stack:
+
+- [Vue 3](https://vuejs.org/)
+- [formatjs](https://formatjs.io/)
+- [yata-fetch](https://github.com/dzbo/yata-fetch)
+- [vite](https://vitejs.dev/)
+
+## Setup
+
+To run the project:
+
+```sh
+npm install
+npm run dev
+```
+
+Generate translations:
+
+```sh
+npm run yata-fetch
+```

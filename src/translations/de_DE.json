@@ -1,0 +1,9 @@
+{
+  "hello_official": ", der offizielle Vue + Vite-Starter",
+  "hello_install": "Installieren",
+  "hello_ide": "in Ihrer IDE für eine bessere DX",
+  "hello_edit": "Bearbeiten Sie {code}, um HMR zu testen",
+  "hello_count": "zählen ist {count}",
+  "hello_click": "Klicken Sie auf die Logos von Vite und Vue, um mehr zu erfahren",
+  "hello_checkout": "Kasse"
+}

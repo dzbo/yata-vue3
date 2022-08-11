@@ -1,5 +1,7 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import { setupIntl, defaultConfig } from "./lib/intl";
 
-createApp(App).mount('#app')
+setupIntl(defaultConfig);
+createApp(App).mount("#app");

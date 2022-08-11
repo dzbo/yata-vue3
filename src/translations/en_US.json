@@ -1,0 +1,9 @@
+{
+  "hello_official": ", the official Vue + Vite starter",
+  "hello_install": "Install",
+  "hello_ide": "in your IDE for a better DX",
+  "hello_edit": "Edit {code} to test HMR",
+  "hello_count": "count is {count}",
+  "hello_click": "Click on the Vite and Vue logos to learn more",
+  "hello_checkout": "Check out"
+}
